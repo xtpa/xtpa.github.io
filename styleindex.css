@@ -5,24 +5,22 @@
 	margin: 0px;
 }
 
-h1{
-	text-align: center;
+div h1{
+	display: block;
 	margin-left: 30%;
-	margin-right: 30%;
-	padding-top: 25px;
-	padding-bottom: 0px;
+	padding-top: 20px;
+	padding-bottom: 5px;
 	color: white;
-	font-size: 35px;
 	font-family: Verdana;
+	font-size: 30px;
+	position: relative;
 }
 
 header{
-	color: black;
 	background-color: rgba(0, 0, 0, 0.5);
 	height: 80px;
 	padding: 0px;
 	margin: 0px;
-	
 }
 
 h2#inscricao{
@@ -32,45 +30,54 @@ h3#inscricao{
 	text-align:center;
 }
 
-img#what1{
-	width: 25%;
-	height: 25%;
-	display: inline;
-	border-radius: 50%;
-	margin: 30px;
-}
 
-img#what2{
-	width: 25%;
-	height: 25%;
-	display: inline;
-	border-radius: 50%;
-	margin: 30px;
+.icon:hover,
+.icon:focus {
+    border-color: red;
+    transition: all .5s;
+    
 }
-
-img#what3{
-	width: 25%;
-	height: 25%;
-	display: inline;
-	border-radius: 50%;
-	margin: 30px;
+.icon {
+  margin: 30px;
+  border-radius: 50%;
+  width: 25%;
+  height: 25%;
+  display: inline;
+  background-color: cornflowerblue;
+  border: 5px solid #999;
+  animation: bounce 1s infinite alternate;
+  -webkit-animation: bounce 0.5s infinite alternate;
+  transition: transform 1s;
+  transform: translateX(0) scale(0.5);
 }
-
-#what1 a:hover{
-	transition: all .5s;
+@keyframes bounce {
+  from {
+    transform: translateY(0px);
+  }
+  to {
+    transform: translateY(-15px);
+  }
 }
-
-#what2 a:hover{
-	transition: all .5s;
+@-webkit-keyframes bounce {
+  from {
+    transform: translateY(0px);
+  }
+  to {
+    transform: translateY(-15px);
+  }
 }
-
-#what3 a:hover{
-	transition: all .5s;
+@keyframes go-back {
+    0% {
+        transform: translateX(100px);
+    }
+    100% {
+        transform: translateX(0);
+    }
 }
 
 section{
 	color: rgba(255, 0, 0, 0.6);
-	background-color: rgba(0, 0, 0, 0.3);
+	background-color: rgba(0,0,0,0.1);
 	font-family: Arial;
 	padding: 10px;
 }
@@ -90,6 +97,16 @@ section a:active {
   color: darkred;
 }
 
+table{
+	font-weight: bold; 
+	color: rgba(255, 255, 255, 0.75);
+	justify-content: center;
+	margin: 0 auto;
+	animation: go-back 1s;
+	width: 70%;
+	height: 70%;
+}
+
 body{
 	font-family: Arial;
 	background-image: url("background.png");
@@ -100,7 +117,7 @@ body{
 }
 
 footer{
-	background-color: rgba(0, 0, 0, 0.5);
+	background-color: rgba(0,0,0,0.5);
 	color: #FFFFFF;	
 	font-family: Verdana;
 	font-size: 12px;
@@ -109,9 +126,9 @@ footer{
 }
 
 nav{
-	background-color: rgba(0, 0, 0, 0.5);
+	background-color: rgba(0,0,0,0.5);
 	height: 35px;
-	padding-top: 30px;
+	padding: 8px;
 	font-family: Verdana;
 	font-size: 14px;
 	transition: all  .5s;
@@ -143,7 +160,7 @@ img#logo{
 	display: block;
 	width: 100px;
 	float: right;
-	margin-top: -72px;
+	margin-top: -70px;
 	position: absolute;
 }
 
