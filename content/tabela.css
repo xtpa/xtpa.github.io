@@ -1,0 +1,19 @@
+
+.iframezinho {
+		background-color:rgba(0, 0, 0, 0.5);
+		color:rgba(0, 0, 0, 0.5);
+		height: 1150px;
+		width: 1200px;
+		transform: scale(0.5);
+		transform-origin: 0 0;
+		
+}
+.oiframe {
+	height: 600px;
+	width: 700px;
+	background-color:rgba(0, 0, 0, 0.5);
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}

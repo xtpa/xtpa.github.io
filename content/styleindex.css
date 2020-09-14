@@ -1,0 +1,190 @@
+@charset "UTF-8";
+
+*{
+	padding: 0px;
+	margin: 0px;
+}
+
+div h1{
+	display: block;
+	margin-left: 30%;
+	padding-top: 20px;
+	padding-bottom: 5px;
+	color: white;
+	font-family: Verdana;
+	font-size: 30px;
+	position: relative;
+}
+
+header{
+	background-color: rgba(0, 0, 0, 0.5);
+	height: 80px;
+	padding: 0px;
+	margin: 0px;
+}
+
+h2#inscricao{
+	text-align:center;
+}
+h3#inscricao{
+	text-align:center;
+}
+
+
+.icon:hover,
+.icon:focus {
+    border-color: red;
+    transition: all .5s;
+    
+}
+.icon {
+  margin: 30px;
+  border-radius: 50%;
+  width: 25%;
+  height: 25%;
+  display: inline;
+  background-color: cornflowerblue;
+  border: 5px solid #999;
+  animation: bounce 1s infinite alternate;
+  -webkit-animation: bounce 0.5s infinite alternate;
+  transition: transform 1s;
+  transform: translateX(0) scale(0.5);
+}
+@keyframes bounce {
+  from {
+    transform: translateY(0px);
+  }
+  to {
+    transform: translateY(-15px);
+  }
+}
+@-webkit-keyframes bounce {
+  from {
+    transform: translateY(0px);
+  }
+  to {
+    transform: translateY(-15px);
+  }
+}
+@keyframes go-back {
+    0% {
+        transform: translateX(100px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+section{
+	color: rgba(255, 0, 0, 0.6);
+	background-color: rgba(0,0,0,0.3);
+	font-family: Arial;
+	padding: 10px;
+}
+section a:link {
+  color: rgb(255, 255, 0);
+}
+
+section a:visited {
+  color: rgb(180, 150, 0);
+}
+
+section a:hover {
+  color: rgb(255, 120, 0);;
+}
+
+section a:active {
+  color: darkred;
+}
+
+table{
+	font-weight: bold; 
+	color: rgba(255, 255, 255, 0.75);
+	justify-content: center;
+	margin: 0 auto;
+	animation: go-back 1s;
+	width: 70%;
+	height: 70%;
+}
+
+body{
+	font-family: Arial;
+	background-image: URL("background.png");
+	background-repeat: no-repeat;
+    background-attachment: fixed;
+	background-color: #CCCCCC;
+	padding: 10px;
+}
+
+footer{
+	background-color: rgba(0,0,0,0.5);
+	color: #FFFFFF;	
+	font-family: Verdana;
+	font-size: 12px;
+	text-align: center;
+	padding: 8px;
+}
+
+nav{
+	background-color: rgba(0,0,0,0.5);
+	height: 35px;
+	padding: 8px;
+	font-family: Verdana;
+	font-size: 14px;
+	transition: all  .5s;
+}
+
+nav ul{
+	height: auto;
+	padding: 8px 0px;
+	margin: 0px;
+}
+
+nav li{
+	display: inline;
+	padding: 10px;
+	margin: 0px;
+}
+nav a{
+	padding: 8px 8px 8px 8px;
+	color: #FFFFFF;
+	text-decoration: none;
+}
+
+nav a:hover{
+	background-color: white;
+	color: black;
+}
+
+img#logo{
+	display: block;
+	width: 100px;
+	float: right;
+	margin-top: -70px;
+	position: absolute;
+}
+
+@media all and (min-width:960px){
+	body{
+		width: 960px;
+		margin: auto;
+	} 
+}
+
+@media all and (max-width:480px){
+	nav{
+		height: 100%;	
+	}
+	nav li{
+		display: block;
+		padding: 10px;
+		margin: 0px;
+	}
+}
+	
+p{
+	color: white;
+	font-size: 17px;
+}
+
+
