@@ -1,0 +1,41 @@
+body {
+  background: #ccc;
+  padding: 0px;
+}
+
+.very-specific-design {
+  width: 340px;
+  height: 335px;
+  padding: 0px;
+  background: #111111;
+  position: relative;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  -webkit-transform-origin: center center;
+          transform-origin: center center;
+}
+
+.scaleable-wrapper {
+  width: 100%;
+  padding: 0px;
+  resize: both;
+  position: relative;
+  background: #111111;
+  height: 1000px;
+}
+
+.ui-resizable-se {
+  width: 10px;
+  height: 10px;
+  background: #111111;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.bigred {
+  color: red;
+  font-size: 5rem;
+}
