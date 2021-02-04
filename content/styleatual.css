@@ -53,9 +53,10 @@ section a:active {
 
 body{
 	font-family: Arial;
-	background-image: url("background.png");
+	background-image: url("backgroundn.png");
 	background-repeat: no-repeat;
     background-attachment: fixed;
+    background-size: 200% 100%;
 	background-color: #CCCCCC;
 	padding: 10px;
 }
